@@ -63,7 +63,7 @@ SimpleTemp is a modern platform for dental clinics, hygienists, and dental nurse
 ## App Screenshots 📸
 (The following five placeholders will be replaced with actual screenshots of the app.)
 
-1. ![Screenshots](./mnt/sc.jpg)
+1. ![Screenshots](./mnt/sc.png)
 
 ## Additional Information ℹ️
 - This project was developed **for demo purposes only** and does not require installation instructions.
