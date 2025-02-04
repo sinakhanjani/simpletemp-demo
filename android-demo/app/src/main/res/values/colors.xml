@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2B5D82</color>
+    <color name="colorPrimaryDark">#2B5D82</color>
+    <color name="colorAccent">#51B1B9</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorBlackLight">#1C1C1E</color>
+    <color name="colorTextBlackLight">#1C1C1E</color>
+
+
+    <color name="colorGreen">#25BD46</color>
+    <color name="colorRed">#FF6961</color>
+    <color name="colorOrange">#FF9900</color>
+
+    <color name="colorDayGray">#C7C7CC</color>
+    <color name="colorDayBlue">#02C8FF</color>
+    <color name="colorDayGreen">#00E5AA</color>
+    <color name="colorDayOrange">#FFA800</color>
+    <color name="colorDayRed">#FF0202</color>
+
+    <color name="colorBtnOrange">#FDAC32</color>
+    <color name="colorAccentToday">#E5F4F5</color>
+    <color name="colorAccentLight">#4D51B1B9</color>
+    <color name="colorGreenCard">#2651B1B9</color>
+    <color name="colorBlueDark">#336AAD</color>
+
+    <color name="colorTextPrimary">#3A3A3C</color>
+    <color name="colorTextSecondary">#636366</color>
+    <color name="colorTextTitle">#48484A</color>
+    <color name="colorTextGray">#8E8E93</color>
+    <color name="colorTextHintGray">#C7C7CC</color>
+    <color name="colorTextGraySecond">#898A8D</color>
+    <color name="colorTextGrayLight">#AEAEB2</color>
+    <color name="colorTextLight">#4D3C3C43</color>
+    <color name="colorTextRed">#FF6961</color>
+    <color name="colorHintGray">#645F5F</color>
+
+    <color name="colorDark">#1F767680</color>
+    <color name="colorGray">#E5E5EA</color>
+    <color name="colorGrayDark">#8E8E93</color>
+    <color name="colorGrayLight">#AEAEB2</color>
+    <color name="colorLightBg">#FBFBFB</color>
+    <color name="colorIconGray">#D1D1D6</color>
+
+    <color name="colorDisable">#E4E3DB</color>
+    <color name="colorBorder">#F2F2F7</color>
+    <color name="colorDivider">#F2F2F7</color>
+
+    <color name="colorBlueLight">#E7F5F6</color>
+
+    <color name="colorWindowsBackground">@color/white</color>
+
+    <color name="colorToolbarItems">@color/black</color>
+    <color name="colorEditText">#2B5D82</color>
+    <color name="colorPrimaryLight">#4D2B5D82</color>
+    <color name="colorMessageCard">#CBE8EA</color>
+    <color name="colorDayStroke">@color/colorPrimary</color>
+    <color name="colorCardTextPrimary">#3A3A3C</color>
+    <color name="colorCardTextSecondary">@color/colorTextSecondary</color>
+    <color name="colorCardTextBlack">@color/colorTextSecondary</color>
+
+
+
+
+</resources>

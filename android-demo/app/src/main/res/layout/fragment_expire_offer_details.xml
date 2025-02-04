@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:fillViewport="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.pages.clinic.shift.shifts.offers.expire.ExpireOfferDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:orientation="vertical"
+        android:paddingVertical="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_info"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginHorizontal="16dp"
+            android:outlineAmbientShadowColor="@color/colorRed"
+            android:outlineSpotShadowColor="@color/colorRed"
+            app:cardBackgroundColor="@color/colorRed"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="p">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/v_circle_2"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="-55dp"
+                    android:layout_marginBottom="-80dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="#26FFFFFF" />
+
+                <View
+                    android:id="@+id/v_circle_1"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginEnd="-80dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="#26FFFFFF" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Wednesday April 15th, 2021" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_date"
+                        tools:text="7:30 am - 5:00 pm" />
+
+                    <TextView
+                        android:id="@+id/tv_user_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textColor="@color/colorTextBlackLight"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_time"
+                        tools:text="Dental Hygienist" />
+
+                    <TextView
+                        android:id="@+id/tv_preferred_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toTopOf="@id/tv_cost"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_user_type"
+                        tools:text="35 £/hr (Dentists preferred rate)" />
+
+                    <TextView
+                        android:id="@+id/tv_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toTopOf="@id/tv_expire_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Total Day Pay: £0.00" />
+
+                    <TextView
+                        android:id="@+id/tv_expire_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/expired"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textColor="@color/colorTextBlackLight"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextSecondary"
+            tools:text="@string/hygienist_details" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/colorLightBg"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/colorBorder"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/profile"
+                    android:src="@drawable/ic_default_account"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    android:textColor="@color/colorTextTitle"
+                    app:layout_constraintBottom_toTopOf="@+id/rb_rating"
+                    app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                    app:layout_constraintTop_toTopOf="@+id/iv_profile"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    tools:text="Anahita Kamali" />
+
+                <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+                    android:id="@+id/rb_rating"
+                    style="@style/AppRatingBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ratings_star_height"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    app:betweenSpace="1dp"
+                    app:count="5"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+                    app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                    tools:rating="4" />
+
+                <TextView
+                    android:id="@+id/tv_cert_no_title"
+                    style="@style/BodyMediumTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/certification_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_profile" />
+
+                <TextView
+                    android:id="@+id/tv_cert_no"
+                    style="@style/BodySmallTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_cert_no_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_cert_no_title"
+                    tools:text="45546768789099" />
+
+                <View
+                    android:id="@+id/divider_cert_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cert_no_title" />
+
+                <TextView
+                    android:id="@+id/tv_graduation_year_title"
+                    style="@style/BodyMediumTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/graduation_year"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider_cert_no" />
+
+                <TextView
+                    android:id="@+id/tv_graduation_year"
+                    style="@style/BodySmallTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_graduation_year_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_graduation_year_title"
+                    tools:text="1999" />
+
+                <View
+                    android:id="@+id/divider_graduation_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_graduation_year_title" />
+
+                <TextView
+                    android:id="@+id/tv_document_title"
+                    style="@style/BodyMediumTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/documents"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider_graduation_year" />
+
+                <TextView
+                    android:id="@+id/tv_resume"
+                    style="@style/DocumentTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_document_title"
+                    app:layout_constraintWidth_percent="0.6"
+                    tools:text="Resume.pdf"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_dbs_cert"
+                    style="@style/DocumentTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_resume"
+                    app:layout_constraintWidth_percent="0.6"
+                    tools:text="DBS cert.jpg"
+                    tools:visibility="visible" />
+
+                <View
+                    android:id="@+id/divider_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_dbs_cert" />
+
+                <TextView
+                    android:id="@+id/tv_specialties_title"
+                    style="@style/BodyMediumTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/specialties"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider_document" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_specialties"
+                    style="@style/BodySmallTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_specialties_title"
+                    tools:text="Endodontrics\nPeriodontrics\nImplantology\nOrthodontics\nRestorative Dentsitry\nOral Surgery" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/if_you_like_this_temp_msg"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextSecondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_request_resubmission"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/request_resubmission" />
+
+    </LinearLayout>
+
+</ScrollView>
+

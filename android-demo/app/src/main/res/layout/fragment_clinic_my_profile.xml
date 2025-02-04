@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.pages.clinic.profile.myprofile.ClinicProfileFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:cardBackgroundColor="@color/colorLightBg"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/colorBorder"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            tools:ignore="ContentDescription">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_account_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_account_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigate_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_account_info"
+                    style="@style/ProfileItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:text="@string/account_information"
+                    app:drawableEndCompat="@drawable/ic_item_edit"
+                    app:drawableStartCompat="@drawable/ic_item_map"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_account_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_phone_number"
+                    style="@style/SubItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/phone_number_"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_account_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_account_info" />
+
+                <TextView
+                    android:id="@+id/tv_dentist_name_cert_no"
+                    style="@style/SubItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/dentist_name_cert_no_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/view_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_clinic_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_personal_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigate_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_clinic_details"
+                    style="@style/ProfileItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:text="@string/clinic_details"
+                    app:drawableEndCompat="@drawable/ic_item_edit"
+                    app:drawableStartCompat="@drawable/ic_item_profile_tick"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_personal_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_manager_name"
+                    style="@style/SubItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/manager_name_"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_personal_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_clinic_details" />
+
+                <TextView
+                    android:id="@+id/tv_clinic_details_params"
+                    style="@style/SubItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/clinic_details_params_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_manager_name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/view_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_bank_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_banking_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigate_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_banking_info"
+                    style="@style/ProfileItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:text="@string/manage_payment"
+                    app:drawableEndCompat="@drawable/ic_item_edit"
+                    app:drawableStartCompat="@drawable/ic_item_card"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_banking_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_card_number"
+                    style="@style/SubItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/card_number_"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_banking_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_banking_info" />
+
+                <TextView
+                    android:id="@+id/tv_expiry_date"
+                    style="@style/SubItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/expiry_date_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_card_number" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</ScrollView>

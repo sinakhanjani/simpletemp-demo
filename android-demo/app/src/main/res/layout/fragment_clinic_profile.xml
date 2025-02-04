@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.clinic.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindowsBackground"
+        android:fillViewport="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeaderTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="128dp"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="12dp"
+                        android:contentDescription="@string/profile"
+                        android:src="@drawable/ic_default_account"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.simpletempco.simpletemp.ui.custom.views.CircleProgress
+                        android:id="@+id/cp_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:endColor="@color/colorAccent"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:startColor="@color/colorPrimary"
+                        app:stroke="12"
+                        tools:percent="100" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab_profile_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/profile"
+                        android:src="@drawable/ic_gallery_add"
+                        app:backgroundTint="@color/colorWindowsBackground"
+                        app:elevation="1dp"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/colorAccent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/colorTextTitle"
+                        tools:text="Anahita Kamali" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:textColor="@color/colorGrayDark"
+                        tools:text="anahita.kamali@outlook.com" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ProgressBar
+                            android:id="@+id/pgb_profile"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="6dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="35"
+                            android:progressDrawable="@drawable/bg_profile_progressbar" />
+
+                        <ImageView
+                            android:id="@+id/iv_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_status"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_profile_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                        android:textColor="@color/colorGrayDark"
+                        tools:text="78% compelet profile" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_profile_complete"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/complete_profile" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/colorLightBg"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/colorBorder"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_clinic_info"
+                        style="@style/ProfileItemStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clinic_profile"
+                        app:drawableStartCompat="@drawable/ic_item_profile" />
+
+                    <include
+                        android:id="@+id/divider_my_profile"
+                        layout="@layout/view_divider" />
+
+                    <TextView
+                        android:id="@+id/tv_settings"
+                        style="@style/ProfileItemStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_settings"
+                        app:drawableStartCompat="@drawable/ic_item_setting" />
+
+                    <include layout="@layout/view_divider" />
+
+                    <TextView
+                        android:id="@+id/tv_ratings"
+                        style="@style/ProfileItemStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clinic_ratings"
+                        app:drawableStartCompat="@drawable/ic_item_ratings" />
+
+                    <include layout="@layout/view_divider" />
+
+                    <TextView
+                        android:id="@+id/tv_note_doc"
+                        style="@style/ProfileItemStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clinic_notes_and_documents"
+                        app:drawableStartCompat="@drawable/ic_clipboard" />
+
+                    <include layout="@layout/view_divider" />
+
+                    <TextView
+                        android:id="@+id/tv_support"
+                        style="@style/ProfileItemStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support"
+                        app:drawableStartCompat="@drawable/ic_item_support" />
+
+                    <include layout="@layout/view_divider" />
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        style="@style/ProfileItemStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/logout"
+                        app:drawableEndCompat="@null"
+                        app:drawableStartCompat="@drawable/ic_item_logout" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Version 1.0.0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_terms_of_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/terms_of_service"
+                    android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                    android:textColor="@color/colorGrayLight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/and"
+                    android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                    android:textColor="@color/colorGrayLight" />
+
+                <TextView
+                    android:id="@+id/tv_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/privacy_policy"
+                    android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                    android:textColor="@color/colorGrayLight" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+

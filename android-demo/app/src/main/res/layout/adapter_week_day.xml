@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="60dp"
+    android:layout_height="72dp"
+    android:layout_marginHorizontal="5dp"
+    android:background="@drawable/bg_corner_rectangle"
+    android:backgroundTint="@color/color_week_day"
+    android:fontFamily="@font/poppins_medium"
+    android:gravity="center"
+    android:includeFontPadding="false"
+    android:lineSpacingMultiplier="1.4"
+    android:textAlignment="gravity"
+    android:textColor="@color/color_text_week_day"
+    android:textSize="12.5sp"
+    tools:text="Sun\n27 Feb" />

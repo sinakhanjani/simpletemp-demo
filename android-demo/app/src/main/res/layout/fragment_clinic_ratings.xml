@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    tools:context=".ui.pages.clinic.profile.rating.ClinicRatingsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_rating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="3"
+        tools:listitem="@layout/adapter_review" />
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindowsBackground"
+        tools:visibility="gone" />
+
+</FrameLayout>

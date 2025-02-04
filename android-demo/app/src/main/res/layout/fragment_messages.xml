@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.common.support.tickets.message.MessageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindowsBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_subject"
+            style="@style/TitleEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:text="Subject" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            tools:itemCount="2"
+            tools:listitem="@layout/adapter_message_user" />
+
+        <LinearLayout
+            android:id="@+id/container_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_form">
+
+            <EditText
+                android:id="@+id/edt_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:paddingHorizontal="16dp"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/color_text_edt"
+                tools:ignore="Autofill,LabelFor"
+                tools:text="your text" />
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_send_btn"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:src="@drawable/ic_send"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindowsBackground"
+        tools:visibility="gone" />
+
+</FrameLayout>

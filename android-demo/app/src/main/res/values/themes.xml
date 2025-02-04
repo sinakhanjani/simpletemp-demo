@@ -1,0 +1,322 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SimpleTemp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="materialTimePickerTheme">@style/TimePickerDialogTheme</item>
+    </style>
+
+    <style name="AccountTypeItem" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="ButtonShapeAppearance" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="shapeAppearanceOverlay">@style/ButtonShapeAppearance</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="borderWidth">1dp</item>
+        <item name="strokeColor">@color/colorTextGrayLight</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="shapeAppearanceOverlay">@style/ButtonShapeAppearance</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="drawableTint">@color/color_icon_tint</item>
+        <item name="android:textColor">@color/color_text_edt</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:background">@drawable/bg_app_edit_text</item>
+        <item name="android:drawablePadding">@dimen/drawablePadding</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:background">@drawable/bg_radio_button</item>
+        <item name="android:textColor">@color/color_text_radio_button</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+    </style>
+
+    <style name="TilPassword" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="passwordToggleEnabled">true</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="boxStrokeColor">@android:color/transparent</item>
+        <item name="passwordToggleTint">@color/color_icon_tint</item>
+    </style>
+
+    <style name="LoadingDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_exit</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="NumberEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="maxLines">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:background">@drawable/bg_edt_number</item>
+        <item name="android:layout_marginLeft">@dimen/edt_number_margin</item>
+        <item name="android:layout_marginRight">@dimen/edt_number_margin</item>
+    </style>
+
+    <style name="ProfileItemStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="drawableEndCompat">@drawable/ic_navigate_next</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="StepBarItemStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:background">@drawable/bg_circle</item>
+        <item name="android:textColor">@color/colorIconGray</item>
+    </style>
+
+    <style name="StepBarItemTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextGrayLight</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="SubItemStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="ToolbarTextStyle" parent="@style/TextAppearance.Material3.TitleMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TitleEditTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyLarge</item>
+    </style>
+
+    <style name="ProfileEditTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:paddingStart">@dimen/profile_edt_margin</item>
+        <item name="android:paddingEnd">@dimen/profile_edt_margin</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColorHint">@color/colorTextHintGray</item>
+        <item name="android:background">@drawable/bg_edt_profile</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="ShiftItemTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:background">@drawable/bg_edt_profile</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="AppRatingBarStyle" parent="Widget.AppCompat.RatingBar">
+        <item name="ability">false</item>
+        <item name="emptyStar">@drawable/ic_star_off</item>
+        <item name="filledStar">@drawable/ic_star_on</item>
+        <item name="betweenSpace">3dp</item>
+    </style>
+
+    <style name="RatingProgressBarStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/bg_rating_progressbar</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="RatingTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyLarge</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="HomeBoxTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="HomeBoxSubTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="WeekDaysTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="DayDetailsTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TabLayoutAppearance" parent="@style/TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="TabLayoutAppearanceList" parent="@style/TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="BodyMediumTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BodySmallTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="InvoiceSmallTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="HeaderTitleTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineMedium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="DocumentTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:background">@drawable/bg_edt_profile</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="drawableStartCompat">@drawable/ic_attach</item>
+    </style>
+
+    <style name="TimePickerDialogTheme" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButtonStyle</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButtonStyle</item>
+    </style>
+
+    <style name="DialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorEditText</item>
+    </style>
+
+</resources>

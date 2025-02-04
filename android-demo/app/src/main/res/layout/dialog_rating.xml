@@ -1,0 +1,128 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_corner"
+    app:cardUseCompatPadding="true"
+    app:strokeColor="@color/colorBorder"
+    app:strokeWidth="1dp"
+    tools:context=".ui.custom.dialogs.RatingDialog"
+    tools:layout_gravity="center"
+    tools:layout_width="330dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextGray"
+            tools:text="Dr Elgin Dental" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextTitle"
+            tools:text="7:30 am - 5:00 pm" />
+
+        <TextView
+            android:id="@+id/tv_total_day_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextTitle"
+            tools:text="Total Days Pay: £280.00" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextGray"
+            app:drawableStartCompat="@drawable/ic_direct_right"
+            app:drawableTint="@color/colorTextGray"
+            tools:text="Street name, City • 23 miles" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextSecondary"
+            tools:text="How was your experience at Elgin Dental?\n(anonymous)" />
+
+        <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+            android:id="@+id/rb_rating"
+            style="@style/AppRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            app:ability="true"
+            app:betweenSpace="8dp"
+            app:count="5"
+            app:layout_constraintEnd_toEndOf="@+id/rb_rating_2"
+            app:layout_constraintTop_toBottomOf="@id/rb_rating_2"
+            tools:rating="0" />
+
+        <EditText
+            android:id="@+id/edt_review"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:hint="@string/add_details_optional"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:includeFontPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/submit"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

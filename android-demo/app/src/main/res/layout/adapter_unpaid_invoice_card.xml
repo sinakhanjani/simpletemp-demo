@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    app:cardBackgroundColor="@color/colorLightBg"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="0dp"
+    tools:cardBackgroundColor="@color/colorBlueLight"
+    tools:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/ic_default_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:textColor="@color/colorTextTitle"
+            app:layout_constraintBottom_toTopOf="@+id/tv_user_type"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Anahita Kamali" />
+
+        <TextView
+            android:id="@+id/tv_user_type"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Hygienist" />
+
+        <!--    start    -->
+
+        <TextView
+            android:id="@+id/date_of_shift_title"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/date_of_shift"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile" />
+
+        <TextView
+            android:id="@+id/tv_date_of_shift"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/date_of_shift_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/date_of_shift_title"
+            tools:text="April 12 th, 2022" />
+
+        <View
+            android:id="@+id/divider_date_of_shift"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_of_shift" />
+
+        <TextView
+            android:id="@+id/time_of_shift_title"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/time_of_shift"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_date_of_shift" />
+
+        <TextView
+            android:id="@+id/tv_time_of_shift"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/time_of_shift_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/time_of_shift_title"
+            tools:text="7:30 am - 5:30 pm" />
+
+        <View
+            android:id="@+id/divider_time_of_shift"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time_of_shift" />
+
+        <TextView
+            android:id="@+id/hourly_payment_title"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/hourly_payment"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_time_of_shift" />
+
+        <TextView
+            android:id="@+id/tv_hourly_payment"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/hourly_payment_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hourly_payment_title"
+            tools:text="£ 30 /hr" />
+
+        <View
+            android:id="@+id/divider_hourly_payment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintTop_toBottomOf="@+id/hourly_payment_title" />
+
+        <TextView
+            android:id="@+id/total_title"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total"
+            android:textColor="@color/colorEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_hourly_payment" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorEditText"
+            app:layout_constraintBottom_toBottomOf="@id/total_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/total_title"
+            tools:text="£ 269.00" />
+
+        <!--    end    -->
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorGray"
+            app:layout_constraintTop_toBottomOf="@+id/total_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pay_manually"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="@string/pay_manually"
+            app:autoSizeMaxTextSize="12sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_pay_now"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pay_now"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="@string/pay_now"
+            app:autoSizeMaxTextSize="13sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_pay_manually"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

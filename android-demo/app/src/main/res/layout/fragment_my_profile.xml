@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.pages.dentaltemp.profile.myprofile.MyProfileFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:cardBackgroundColor="@color/colorLightBg"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/colorBorder"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            tools:ignore="ContentDescription">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_account_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_account_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigate_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_account_info"
+                    style="@style/ProfileItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:text="@string/account_information"
+                    app:drawableEndCompat="@drawable/ic_item_edit"
+                    app:drawableStartCompat="@drawable/ic_item_map"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_account_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/SubItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/address_"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_account_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_account_info" />
+
+                <TextView
+                    android:id="@+id/tv_cellphone"
+                    style="@style/SubItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/cellphone_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/view_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_personal_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigate_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_personal_info"
+                    style="@style/ProfileItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:text="@string/personal_information"
+                    app:drawableEndCompat="@drawable/ic_item_edit"
+                    app:drawableStartCompat="@drawable/ic_item_profile_tick"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_personal_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_certification"
+                    style="@style/SubItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/certification_number_"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_personal_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_personal_info" />
+
+                <TextView
+                    android:id="@+id/tv_graduation"
+                    style="@style/SubItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/graduation_year_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_certification" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/view_divider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_bank_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_banking_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigate_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_banking_info"
+                    style="@style/ProfileItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:text="@string/banking_information"
+                    app:drawableEndCompat="@drawable/ic_item_edit"
+                    app:drawableStartCompat="@drawable/ic_item_card"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_banking_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_account_number"
+                    style="@style/SubItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/account_number_"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_banking_next"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_banking_info" />
+
+                <TextView
+                    android:id="@+id/tv_sort_code"
+                    style="@style/SubItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="0dp"
+                    android:text="@string/sort_code_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_account_number" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</ScrollView>

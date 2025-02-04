@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorLightBg"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:strokeColor="@color/colorBorder"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/ic_default_account"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.7"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:textColor="@color/colorTextTitle"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Anahita Kamali" />
+
+        <TextView
+            android:id="@+id/tv_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Hygienist" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_type"
+            tools:text="Wednesday, Apr 9th 2021" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date"
+            tools:text="1:00 PM - 7:00 PM" />
+
+
+        <TextView
+            android:id="@+id/tv_hourly_rate"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            tools:text="Hourly Rate Offer :    35 £/hr" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/total_"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_hourly_rate"
+            app:layout_constraintEnd_toStartOf="@+id/tv_total_price"
+            app:layout_constraintTop_toTopOf="@+id/tv_hourly_rate" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            style="@style/InvoiceSmallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_hourly_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_hourly_rate"
+            tools:text="£ 150.00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

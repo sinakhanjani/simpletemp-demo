@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1097324810241",
+    "project_id": "simpletemp-ec368",
+    "storage_bucket": "simpletemp-ec368.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097324810241:android:8549f2ad6e0bc134e2f000",
+        "android_client_info": {
+          "package_name": "com.simpletempco.simpletemp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097324810241-685nds10v82h9sldp3brnejsfbb9v1pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3yGBaQEC_yeEWAXIYwxFAHci4d0zMah8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097324810241-685nds10v82h9sldp3brnejsfbb9v1pn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097324810241-170mv2r9bpv5eeqi7tsjlodk07gfatjt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.simpletempco.simpletemp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

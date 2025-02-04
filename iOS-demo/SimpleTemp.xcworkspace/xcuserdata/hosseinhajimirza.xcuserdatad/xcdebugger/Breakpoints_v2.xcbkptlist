@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C6D5E7F4-CA56-48F7-9FD6-B8DAE5B081B7"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1822970-6BC4-479A-811C-A6293DA1FE3B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleTemp/Helper/Pickers/SingleSelectionList/SingleSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "body(content:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - 832da274148aa76e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt;&gt;, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - caf90df34ab65d6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt;&gt;, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - 524c18264f246368"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt;&gt;, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - cadc5d089c70cd6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt;&gt;, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - f28813e5b3e755f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.coordinateSpace&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Hashable&gt;(name: &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;, SimpleTemp.IAlert&lt;SimpleTemp.BlueFilledButton&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - 6689605bbb015ab2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.coordinateSpace&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Hashable&gt;(name: &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;, SimpleTemp.IAlert&lt;SimpleTemp.BlueFilledButton&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - e963b6bbfe1811eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.coordinateSpace&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Hashable&gt;(name: &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;, SimpleTemp.IAlert&lt;SimpleTemp.BlueFilledButton&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3B4318B5-A981-4C86-A76C-32BBBE997249 - ddce781a032173ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SimpleTemp.PullToRefresh, SimpleTemp.DentalTempCalendarShiftInformation&lt;&lt;&lt;opaque return type of SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.coordinateSpace&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Hashable&gt;(name: &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SimpleTemp.IAlert&lt;SwiftUI.TupleView&lt;(SimpleTemp.BlueFilledButton, SimpleTemp.BorderedButton)&gt;&gt;, SimpleTemp.IAlert&lt;SimpleTemp.BlueFilledButton&gt;)&gt; in SimpleTemp.DentalTempAvailableShift.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempHomeGroup/DentalTempCalendarGroup/DentalTempAvailableShift/DentalTempAvailableShift.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4 - be7c9103fa820fc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #2 () -&gt; () in SimpleTemp.DentalTempTabView.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4 - a5ecaba975a415e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #2 () -&gt; () in SimpleTemp.DentalTempTabView.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4 - d863392c04abb3ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #2 () -&gt; () in SimpleTemp.DentalTempTabView.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4 - 7a17c1488ed577c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #2 () -&gt; () in SimpleTemp.DentalTempTabView.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4 - be7c9103fa820fc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #2 () -&gt; () in SimpleTemp.DentalTempTabView.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "D127DFAD-C335-417D-8B9D-AE44E10AF6D4 - a5ecaba975a415e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async throws -&gt; () in closure #2 () -&gt; () in SimpleTemp.DentalTempTabView.body.getter : some"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/DentalTemp/DentalTempTabViewGroup/DentalTempTabView/DentalTempTabView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DB4FC25-A6DA-4B8F-A1E8-655C7B024511"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleTemp/App/View/Starter/DecideRegistrationGroup/SignUpGroup/EmailVerification/EmailVerificationModelData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "clinicEmailVerificationRequest(networkModelData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3DB4FC25-A6DA-4B8F-A1E8-655C7B024511 - 5e5fabc7465fd4d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for SimpleTemp.EmailVerificationModelData.clinicEmailVerificationRequest(networkModelData: SimpleTemp.NetworkModelData) async throws -&gt; SimpleTemp.GenericModel&lt;SimpleTemp.ClinicModel&gt;"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/Starter/DecideRegistrationGroup/SignUpGroup/EmailVerification/EmailVerificationModelData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "988">
+               </Location>
+               <Location
+                  uuid = "3DB4FC25-A6DA-4B8F-A1E8-655C7B024511 - 5e5fabc7465fd4d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for SimpleTemp.EmailVerificationModelData.clinicEmailVerificationRequest(networkModelData: SimpleTemp.NetworkModelData) async throws -&gt; SimpleTemp.GenericModel&lt;SimpleTemp.ClinicModel&gt;"
+                  moduleName = "SimpleTemp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosseinhajimirza/Downloads/SimpleTempMain/main/SimpleTemp/App/View/Starter/DecideRegistrationGroup/SignUpGroup/EmailVerification/EmailVerificationModelData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "2764">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

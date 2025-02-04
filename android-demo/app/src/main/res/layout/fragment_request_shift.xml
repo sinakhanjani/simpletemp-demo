@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:fillViewport="true"
+    tools:context=".ui.pages.dentaltemp.home.request.RequestShiftFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="@string/request_a_shift"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextSecondary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:text="@string/request_a_shift_msg"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextSecondary" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/colorLightBg"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/colorBorder"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:id="@+id/clinic_name"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/clinic_name"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_arrival_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_arrival_time" />
+
+                <TextView
+                    android:id="@+id/tv_clinic_name"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical|end"
+                    android:hint="@string/selected"
+                    android:textColor="@color/colorHintGray"
+                    android:textColorHint="@color/colorHintGray"
+                    app:drawableEndCompat="@drawable/ic_next_raw"
+                    app:layout_constraintBottom_toBottomOf="@+id/clinic_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/clinic_name"
+                    app:layout_constraintTop_toTopOf="@+id/clinic_name" />
+
+                <View
+                    android:id="@+id/divider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/clinic_name" />
+
+                <TextView
+                    android:id="@+id/date_of_shift"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/date_of_shift"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_date_of_shift"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_date_of_shift" />
+
+                <TextView
+                    android:id="@+id/tv_date_of_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_edt_profile"
+                    android:backgroundTint="@color/colorDark"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                    android:textColor="@color/colorTextTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_name"
+                    tools:text="2022 12 09" />
+
+                <View
+                    android:id="@+id/divider_date_of_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_date_of_shift" />
+
+                <TextView
+                    android:id="@+id/arrival_time"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/shift_arrival_time"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_arrival_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_arrival_time" />
+
+                <TextView
+                    android:id="@+id/tv_arrival_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_edt_profile"
+                    android:backgroundTint="@color/colorDark"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                    android:textColor="@color/colorTextTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_date_of_shift"
+                    tools:text="09 : 41" />
+
+                <View
+                    android:id="@+id/divider_arrival_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_arrival_time" />
+
+                <TextView
+                    android:id="@+id/end_time"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/shift_end_time"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_end_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_end_time" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_edt_profile"
+                    android:backgroundTint="@color/colorDark"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                    android:textColor="@color/colorTextTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_arrival_time"
+                    tools:text="09 : 41" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_hourly_rate"
+            style="@style/ShiftItemTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:hint="@string/select_your_hourly_rate_e_per_hr"
+            android:paddingVertical="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableEndCompat="@drawable/ic_navigate_next"
+            app:drawableTint="@color/white" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/request_a_shift_terms_msg"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextSecondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_send_offer"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="16dp"
+            android:text="@string/send_offer" />
+
+    </LinearLayout>
+
+</ScrollView>

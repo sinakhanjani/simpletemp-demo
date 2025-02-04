@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgress">
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="startAngle" format="float" />
+        <attr name="percent" format="integer" />
+        <attr name="progress" format="float" />
+        <attr name="stroke" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="AppRatingBar">
+        <attr name="ratingMode" format="enum">
+            <enum name="swipe" value="0" />
+            <enum name="click" value="1" />
+        </attr>
+        <attr name="ability" format="boolean" />
+        <attr name="count" format="integer" />
+        <attr name="rating" format="integer" />
+        <attr name="betweenSpace" format="dimension" />
+        <attr name="emptyStar" format="reference" />
+        <attr name="filledStar" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleCalendar">
+        <attr name="showDetails" format="boolean" />
+        <attr name="select_mode" format="boolean" />
+    </declare-styleable>
+
+</resources>

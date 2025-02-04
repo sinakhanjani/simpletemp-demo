@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="1dp"
+    app:cardBackgroundColor="@color/colorLightBg"
+    android:outlineSpotShadowColor="@color/colorBorder"
+    android:outlineAmbientShadowColor="@color/colorBorder"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:strokeColor="@color/colorBorder"
+    app:strokeWidth="1dp"
+    tools:targetApi="p">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/ic_default_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next_raw"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_profile"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.7"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:textColor="@color/colorTextTitle"
+            app:layout_constraintEnd_toStartOf="@+id/rb_rating"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Anahita Kamali" />
+
+        <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+            android:id="@+id/rb_rating"
+            style="@style/AppRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            app:betweenSpace="3dp"
+            app:count="5"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+            app:layout_constraintEnd_toStartOf="@+id/iv_next"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="@+id/tv_name"
+            tools:rating="4" />
+
+        <TextView
+            android:id="@+id/tv_hourly_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextSecondary"
+            app:layout_constraintBottom_toTopOf="@id/tv_expire_time"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            tools:text="Hourly Rate Offer :    35 £/hr" />
+
+        <TextView
+            android:id="@+id/tv_expire_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/colorTextSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            tools:text="Time to Expiry:           18:00:00" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_round_rectangle"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_rotate_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+            tools:text="@string/this_offer_was_resubmitted"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

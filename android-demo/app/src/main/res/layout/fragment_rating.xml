@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWindowsBackground"
+    tools:context=".ui.pages.clinic.money.review.ReviewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/ic_default_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextTitle"
+            tools:text="Katrin Pander" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/rating_feedback_msg"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/colorTextTitle" />
+
+        <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+            android:id="@+id/rb_rating"
+            style="@style/AppRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            app:ability="true"
+            app:betweenSpace="8dp"
+            app:count="5"
+            app:layout_constraintEnd_toEndOf="@+id/rb_rating_2"
+            app:layout_constraintTop_toBottomOf="@id/rb_rating_2"
+            tools:rating="0" />
+
+        <TextView
+            android:id="@+id/tv_rating_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="0.0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorTextSecondary"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/professionalism"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextGray" />
+
+        <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+            android:id="@+id/rb_rating_professionalism"
+            style="@style/AppRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:ability="true"
+            app:betweenSpace="8dp"
+            app:count="5"
+            app:layout_constraintEnd_toEndOf="@+id/rb_rating_2"
+            app:layout_constraintTop_toBottomOf="@id/rb_rating_2"
+            tools:rating="0" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/timekeeping"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextGray" />
+
+        <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+            android:id="@+id/rb_rating_timekeeping"
+            style="@style/AppRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:ability="true"
+            app:betweenSpace="8dp"
+            app:count="5"
+            app:layout_constraintEnd_toEndOf="@+id/rb_rating_2"
+            app:layout_constraintTop_toBottomOf="@id/rb_rating_2"
+            tools:rating="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/competency_and_skills"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextGray" />
+
+        <com.simpletempco.simpletemp.ui.custom.views.AppRatingBar
+            android:id="@+id/rb_rating_competency_and_skills"
+            style="@style/AppRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:ability="true"
+            app:betweenSpace="8dp"
+            app:count="5"
+            app:layout_constraintEnd_toEndOf="@+id/rb_rating_2"
+            app:layout_constraintTop_toBottomOf="@id/rb_rating_2"
+            tools:rating="0" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextTitle"
+            tools:text="Please write a review about ” Katrin Pander ”" />
+
+        <EditText
+            android:id="@+id/edt_review"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:hint="@string/add_details_optional"
+            android:imeOptions="normal"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:maxLines="20"
+            android:minHeight="100dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            tools:ignore="Autofill" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</ScrollView>

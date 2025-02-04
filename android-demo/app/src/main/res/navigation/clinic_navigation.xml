@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clinic_navigation.xml"
+    app:startDestination="@id/home_dest">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_clinic_home">
+
+        <action
+            android:id="@+id/action_home_dest_to_clinic_shifts"
+            app:destination="@id/clinic_shifts"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_dest_to_confirmed_shift"
+            app:destination="@id/confirmed_shift"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_dest_to_offers"
+            app:destination="@id/offers"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/money_dest"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.MoneyFragment"
+        android:label=""
+        tools:layout="@layout/fragment_clinic_money">
+
+        <action
+            android:id="@+id/action_money_dest_to_all_invoice"
+            app:destination="@id/all_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_money_dest_to_pay_now_invoice"
+            app:destination="@id/pay_now_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_money_dest_to_pay_manually_invoice"
+            app:destination="@id/pay_manually_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_money_dest_to_review"
+            app:destination="@id/review"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_dest"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.ProfileFragment"
+        android:label=""
+        tools:layout="@layout/fragment_clinic_profile">
+
+        <action
+            android:id="@+id/action_profile_dest_to_clinic_my_profile"
+            app:destination="@id/clinic_my_profile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_profile_dest_to_clinic_ratings"
+            app:destination="@id/clinic_ratings"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_profile_dest_to_clinic_settings"
+            app:destination="@id/clinic_settings"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_profile_dest_to_note_and_document"
+            app:destination="@id/note_and_document"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_profile_dest_to_clinic_info"
+            app:destination="@id/clinic_info"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_my_profile"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.myprofile.ClinicProfileFragment"
+        android:label="@string/clinic_profile"
+        tools:layout="@layout/fragment_clinic_my_profile">
+
+        <action
+            android:id="@+id/action_clinic_my_profile_to_clinic_info"
+            app:destination="@id/clinic_info"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_clinic_my_profile_to_clinic_details"
+            app:destination="@id/clinic_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_clinic_my_profile_to_clinic_payment_method"
+            app:destination="@id/clinic_payment_method"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_info"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.myprofile.account.ClinicInfoFragment"
+        android:label="@string/clinic_information"
+        tools:layout="@layout/fragment_clinic_info">
+
+        <argument
+            android:name="is_profile_complete"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_clinic_info_to_map"
+            app:destination="@id/map"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_clinic_info_to_clinic_details"
+            app:destination="@id/clinic_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.myprofile.account.map.MapFragment"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_map">
+
+        <argument
+            android:name="picked_location"
+            android:defaultValue="@null"
+            app:argType="com.google.android.gms.maps.model.LatLng"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_details"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.myprofile.detail.ClinicDetailsFragment"
+        android:label="@string/clinic_details"
+        tools:layout="@layout/fragment_clinic_details">
+
+        <argument
+            android:name="is_profile_complete"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_clinic_details_to_clinic_payment_method"
+            app:destination="@id/clinic_payment_method"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_payment_method"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.myprofile.payment.ClinicPaymentMethodFragment"
+        android:label="@string/payment_method"
+        tools:layout="@layout/fragment_clinic_payment_method">
+
+        <argument
+            android:name="is_profile_complete"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_ratings"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.rating.ClinicRatingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_clinic_ratings" />
+
+    <fragment
+        android:id="@+id/forgot_password"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.forgot.ForgotPasswordFragment"
+        android:label="@string/reset_password"
+        tools:layout="@layout/fragment_forgot_password">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <argument
+            android:name="is_profile_route"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_forgot_password_to_verification"
+            app:destination="@id/verification"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verification"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.verification.VerificationFragment"
+        android:label="@string/verification"
+        tools:layout="@layout/fragment_verification">
+
+        <argument
+            android:name="reset_password"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <argument
+            android:name="is_profile_route"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_verification_to_new_password"
+            app:destination="@id/new_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/forgot_password"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_password"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.password.NewPasswordFragment"
+        android:label="@string/new_password"
+        tools:layout="@layout/fragment_new_password">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <argument
+            android:name="password_token"
+            app:argType="string" />
+
+        <argument
+            android:name="is_profile_route"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_settings"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.settings.ClinicSettingsFragment"
+        android:label="@string/account_settings"
+        tools:layout="@layout/fragment_clinic_settings">
+
+        <action
+            android:id="@+id/action_clinic_settings_to_forgot_password"
+            app:destination="@id/forgot_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/note_and_document"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.profile.note.NoteAndDocumentFragment"
+        android:label="@string/note_and_document"
+        tools:layout="@layout/fragment_clinic_note_document" />
+
+    <fragment
+        android:id="@+id/notif_dest"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.notif.ClinicNotificationFragment"
+        android:label=""
+        tools:layout="@layout/fragment_clinic_notification">
+
+        <action
+            android:id="@+id/action_notif_dest_to_confirmed_shift"
+            app:destination="@id/confirmed_shift"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_notif_dest_to_offers"
+            app:destination="@id/offers"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_notif_dest_to_pay_now_invoice"
+            app:destination="@id/pay_now_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_notif_dest_to_offer_details"
+            app:destination="@id/offer_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/post_shift_dest"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.post.PostShiftFragment"
+        android:label="@string/post_a_shift"
+        tools:layout="@layout/fragment_post_shift">
+
+        <action
+            android:id="@+id/action_post_shift_dest_to_date_of_shift"
+            app:destination="@id/date_of_shift"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_post_shift_dest_to_posted_shift_result"
+            app:destination="@id/posted_shift_result"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/date_of_shift"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.post.date.DateOfShiftFragment"
+        android:label="@string/date_of_shift"
+        tools:layout="@layout/fragment_date_of_shift">
+
+        <argument
+            android:name="current_date"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_date_of_shift_to_posted_shift_result"
+            app:destination="@id/posted_shift_result"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_date_of_shift_self"
+            app:destination="@id/date_of_shift" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posted_shift_result"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.post.posted.PostedShiftResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_posted_shift">
+
+        <argument
+            android:name="date"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_posted_shift_result_to_clinic_shifts"
+            app:destination="@id/clinic_shifts"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/clinic_shifts"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.shifts.ClinicShiftsFragment"
+        android:label="@string/posted_shifts"
+        tools:layout="@layout/fragment_clinic_shifts">
+
+        <argument
+            android:name="date"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_clinic_shifts_to_confirmed_shift"
+            app:destination="@id/confirmed_shift"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_clinic_shifts_to_offers"
+            app:destination="@id/offers"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmed_shift"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.post.confirmed.ConfirmedShiftFragment"
+        android:label="@string/confirmed_shift"
+        tools:layout="@layout/fragment_confirmed_shift">
+
+        <argument
+            android:name="shift_id"
+            app:argType="string" />
+
+        <argument
+            android:name="from_root"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_confirmed_shift_to_temp_details"
+            app:destination="@id/temp_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/temp_details"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.post.temp.TempDetailsFragment"
+        android:label="@string/temp_details"
+        tools:layout="@layout/fragment_temp_details">
+
+        <argument
+            android:name="dental_temp"
+            app:argType="com.simpletempco.simpletemp.data.remote.models.response.DentalTemp" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/offers"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.shifts.offers.OffersFragment"
+        android:label="@string/offers_on_shift"
+        tools:layout="@layout/fragment_offers">
+
+        <argument
+            android:name="shift"
+            app:argType="com.simpletempco.simpletemp.data.remote.models.response.Shift" />
+
+        <argument
+            android:name="root_page"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_offers_to_offer_details"
+            app:destination="@id/offer_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_offers_to_expire_offer_details"
+            app:destination="@id/expire_offer_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/offer_details"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.shifts.offers.offer.OfferDetailsFragment"
+        android:label="@string/shift_details"
+        tools:layout="@layout/fragment_offer_details">
+
+        <argument
+            android:name="offer"
+            app:argType="com.simpletempco.simpletemp.data.remote.models.response.Offer" />
+
+        <argument
+            android:name="root_page"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/expire_offer_details"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.shift.shifts.offers.expire.ExpireOfferDetailsFragment"
+        android:label="@string/shift_detail"
+        tools:layout="@layout/fragment_expire_offer_details">
+
+        <argument
+            android:name="offer"
+            app:argType="com.simpletempco.simpletemp.data.remote.models.response.Offer" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/all_invoice"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.all.AllInvoiceFragment"
+        android:label="@string/all_invoice"
+        tools:layout="@layout/fragment_all_invoice">
+
+        <action
+            android:id="@+id/action_all_invoice_to_pay_now_invoice"
+            app:destination="@id/pay_now_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_all_invoice_to_pay_manually_invoice"
+            app:destination="@id/pay_manually_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_all_invoice_to_paid_invoice"
+            app:destination="@id/paid_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_all_invoice_to_review"
+            app:destination="@id/review"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/review"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.review.ReviewFragment"
+        android:label="@string/review"
+        tools:layout="@layout/fragment_rating">
+
+        <argument
+            android:name="invoice"
+            app:argType="com.simpletempco.simpletemp.data.remote.models.response.Invoice" />
+
+        <argument
+            android:name="pay_now"
+            app:argType="boolean" />
+
+        <argument
+            android:name="root_page"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_review_to_pay_now_invoice"
+            app:destination="@id/pay_now_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/review"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_review_to_pay_manually_invoice"
+            app:destination="@id/pay_manually_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/review"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_review_to_pay_now_invoice_again"
+            app:destination="@id/pay_now_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/pay_now_invoice"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/paid_invoice"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.paid.PaidInvoiceFragment"
+        android:label="@string/paid_invoice"
+        tools:layout="@layout/fragment_clinic_paid_invoice">
+
+        <argument
+            android:name="invoice_id"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/dispute_invoice"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.dispute.DisputeInvoiceFragment"
+        android:label="@string/dispute_invoice"
+        tools:layout="@layout/fragment_clinic_dispute_invoice">
+
+        <argument
+            android:name="invoice"
+            app:argType="com.simpletempco.simpletemp.data.remote.models.response.Invoice" />
+
+        <argument
+            android:name="root_page"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pay_now_invoice"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.now.PayNowInvoiceFragment"
+        android:label="@string/invoice"
+        tools:layout="@layout/fragment_clinic_pay_invoice">
+
+        <argument
+            android:name="invoice_id"
+            app:argType="string" />
+
+        <argument
+            android:name="root_page"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pay_now_invoice_to_dispute_invoice"
+            app:destination="@id/dispute_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_pay_now_invoice_to_all_invoice"
+            app:destination="@id/all_invoice"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/all_invoice"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pay_now_invoice_to_review"
+            app:destination="@id/review"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pay_manually_invoice"
+        android:name="com.simpletempco.simpletemp.ui.pages.clinic.money.manually.PayManuallyInvoiceFragment"
+        android:label="@string/invoice"
+        tools:layout="@layout/fragment_clinic_pay_manually_invoice">
+
+        <argument
+            android:name="invoice_id"
+            app:argType="string" />
+
+        <argument
+            android:name="root_page"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pay_manually_invoice_to_dispute_invoice"
+            app:destination="@id/dispute_invoice"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_pay_manually_invoice_to_all_invoice"
+            app:destination="@id/all_invoice"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/all_invoice"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+</navigation>

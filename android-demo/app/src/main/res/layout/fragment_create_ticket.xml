@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ui.pages.common.support.tickets.create.CreateTicketFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="Autofill">
+
+        <TextView
+            style="@style/TitleEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/enter_the_subject" />
+
+        <EditText
+            android:id="@+id/edt_subject"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/enter_the_subject"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/TitleEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/description" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:hint="@string/you_can_type_your_problem"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="7"
+            android:maxLines="7" />
+
+        <TextView
+            style="@style/TitleEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/priority" />
+
+        <TextView
+            android:id="@+id/tv_priority"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/select_your_own"
+            android:paddingEnd="16dp"
+            app:drawableEndCompat="@drawable/ic_navigate_next"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            style="@style/TitleEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/category" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/select_department"
+            android:paddingEnd="16dp"
+            app:drawableEndCompat="@drawable/ic_navigate_next"
+            tools:ignore="RtlSymmetry" />
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_send"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:text="@string/send" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+</ScrollView>

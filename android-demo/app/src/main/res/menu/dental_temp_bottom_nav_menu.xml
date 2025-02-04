@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/job_history_dest"
+        android:icon="@drawable/ic_job"
+        android:title="@string/jobs" />
+
+    <item
+        android:id="@+id/notif_dest"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/notif" />
+
+    <item
+        android:id="@+id/home_dest"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        tools:checked="true" />
+
+    <item
+        android:id="@+id/money_dest"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/money" />
+
+    <item
+        android:id="@+id/profile_dest"
+        android:icon="@drawable/ic_profile_circle"
+        android:title="@string/profile" />
+
+</menu>

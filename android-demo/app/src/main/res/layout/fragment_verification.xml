@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.pages.common.authentication.verification.VerificationFragment">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="16dp"
+        android:background="?android:attr/actionBarItemBackground"
+        android:contentDescription="@string/back"
+        android:padding="8dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/colorAccent" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/verify_your_email_address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorTextPrimary" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="@color/colorTextSecondary"
+        tools:text="We’ve sent a verification code to your\nemail - XXX@gmail.com" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/enter_verification_code"
+        android:textColor="@color/colorTextGrayLight"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tools:ignore="Autofill,LabelFor">
+
+        <EditText
+            android:id="@+id/edt_num_1"
+            style="@style/NumberEditTextStyle"
+            android:layout_width="@dimen/edt_number_size"
+            android:layout_height="@dimen/edt_number_size"
+            android:maxLength="1"
+            tools:text="1" />
+
+        <EditText
+            android:id="@+id/edt_num_2"
+            style="@style/NumberEditTextStyle"
+            android:layout_width="@dimen/edt_number_size"
+            android:layout_height="@dimen/edt_number_size"
+            android:maxLength="1"
+            tools:text="2" />
+
+        <EditText
+            android:id="@+id/edt_num_3"
+            style="@style/NumberEditTextStyle"
+            android:layout_width="@dimen/edt_number_size"
+            android:layout_height="@dimen/edt_number_size"
+            android:maxLength="1"
+            tools:text="3" />
+
+        <EditText
+            android:id="@+id/edt_num_4"
+            style="@style/NumberEditTextStyle"
+            android:layout_width="@dimen/edt_number_size"
+            android:layout_height="@dimen/edt_number_size"
+            android:maxLength="1"
+            tools:text="4" />
+
+        <EditText
+            android:id="@+id/edt_num_5"
+            style="@style/NumberEditTextStyle"
+            android:layout_width="@dimen/edt_number_size"
+            android:layout_height="@dimen/edt_number_size"
+            android:maxLength="1"
+            tools:text="5" />
+
+        <EditText
+            android:id="@+id/edt_num_6"
+            style="@style/NumberEditTextStyle"
+            android:layout_width="@dimen/edt_number_size"
+            android:layout_height="@dimen/edt_number_size"
+            android:imeOptions="actionDone"
+            android:maxLength="1"
+            tools:text="6" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verify"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/verify_and_continue"
+        app:backgroundTint="@color/color_primary_btn"
+        tools:enabled="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/didn_t_receive_the_link"
+            android:textColor="@color/colorTextGray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/resend_"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

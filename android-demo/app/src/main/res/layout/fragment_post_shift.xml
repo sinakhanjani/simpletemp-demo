@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    tools:context=".ui.pages.clinic.shift.post.PostShiftFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/please_fill_out_msg_"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/colorTextTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/type_of_temp"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/colorTextTitle" />
+
+            <TextView
+                android:id="@+id/tv_temp_type"
+                style="@style/ShiftItemTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:text="@string/dental_hygienist"
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/ic_navigate_next"
+                app:drawableTint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/date_of_shift"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/colorTextTitle" />
+
+            <TextView
+                android:id="@+id/tv_shift_date"
+                style="@style/ShiftItemTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:drawableEndCompat="@drawable/ic_navigate_next"
+                tools:text="Nov 30th, 2021" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/colorLightBg"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/colorBorder"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:id="@+id/arrival_time"
+                        style="@style/ShiftItemTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/shift_arrival_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_arrival_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_edt_profile"
+                        android:backgroundTint="@color/colorDark"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="3dp"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                        android:textColor="@color/colorTextTitle"
+                        app:layout_constraintEnd_toStartOf="@+id/container_arrival_time"
+                        app:layout_constraintTop_toBottomOf="@+id/arrival_time"
+                        tools:text="09 : 41" />
+
+                    <FrameLayout
+                        android:id="@+id/container_arrival_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_edt_profile"
+                        android:backgroundTint="@color/colorDark"
+                        android:padding="3dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_arrival_time"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_arrival_time">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tbl_arrival_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            app:tabBackground="@drawable/tab_bg"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@null"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMaxWidth="0dp"
+                            app:tabMode="fixed"
+                            app:tabRippleColor="@color/colorAccent"
+                            app:tabSelectedTextColor="@color/colorTextTitle"
+                            app:tabTextAppearance="@style/TabLayoutAppearance"
+                            app:tabTextColor="@color/colorTextTitle">
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/am" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pm" />
+
+                        </com.google.android.material.tabs.TabLayout>
+
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_arrival_time" />
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        style="@style/ShiftItemTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@null"
+                        android:text="@string/shift_end_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_edt_profile"
+                        android:backgroundTint="@color/colorDark"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="3dp"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                        android:textColor="@color/colorTextTitle"
+                        app:layout_constraintEnd_toStartOf="@+id/container_end_time"
+                        app:layout_constraintTop_toBottomOf="@+id/end_time"
+                        tools:text="09 : 41" />
+
+                    <FrameLayout
+                        android:id="@+id/container_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_edt_profile"
+                        android:backgroundTint="@color/colorDark"
+                        android:padding="3dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_end_time"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_end_time">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tbl_end_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            app:tabBackground="@drawable/tab_bg"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@null"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMaxWidth="0dp"
+                            app:tabMode="fixed"
+                            app:tabRippleColor="@color/colorAccent"
+                            app:tabSelectedTextColor="@color/colorTextTitle"
+                            app:tabTextAppearance="@style/TabLayoutAppearance"
+                            app:tabTextColor="@color/colorTextTitle">
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/am" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pm" />
+
+                        </com.google.android.material.tabs.TabLayout>
+
+
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/hourly_rate_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edt_profile"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_hourly_rate"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/preferred_hourly_rate" />
+
+                <TextView
+                    android:id="@+id/tv_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/e_per_hr"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    android:textColor="@color/colorTextGrayLight"
+                    app:drawableEndCompat="@drawable/ic_navigate_next"
+                    tools:text="23 (£/hr)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_time_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edt_profile"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_unpaid_break"
+                    style="@style/ShiftItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/unpaid_break" />
+
+                <TextView
+                    android:id="@+id/tv_break_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    android:textColor="@color/colorTextGrayLight"
+                    app:drawableEndCompat="@drawable/ic_navigate_next"
+                    tools:text="Ex. 1 Hour" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/note_book_the_temp_15_minutes_msg"
+                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                android:textColor="@color/colorTextSecondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_post_shift"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="16dp"
+                android:text="@string/post_shift" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindowsBackground"
+        tools:visibility="gone" />
+
+</FrameLayout>

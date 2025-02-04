@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    tools:context=".ui.pages.common.support.faq.FaqActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWindowsBackground"
+        android:paddingEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/faq"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTextStyle"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/container_faq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/colorLightBg"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_help"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:strokeColor="@color/colorBorder"
+        app:strokeWidth="1dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_faq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="10"
+            android:paddingHorizontal="16dp"
+            tools:listitem="@layout/adapter_faq" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_more_help"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="@string/need_more_help"
+        app:backgroundTint="@color/colorAccent"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_faq" />
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWindowsBackground"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

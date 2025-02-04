@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/support_navigation.xml"
+    app:startDestination="@id/ticket_list">
+
+    <fragment
+        android:id="@+id/ticket_list"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.support.tickets.list.TicketsListFragment"
+        android:label="@string/ticket_list"
+        tools:layout="@layout/fragment_tickets_list">
+
+        <action
+            android:id="@+id/action_ticket_list_to_messages"
+            app:destination="@id/messages"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_ticket_list_to_create_ticket"
+            app:destination="@id/create_ticket"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/messages"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.support.tickets.message.MessageFragment"
+        android:label="@string/messages"
+        tools:layout="@layout/fragment_messages">
+
+        <argument
+            android:name="ticket_id"
+            app:argType="string" />
+
+        <argument
+            android:name="state"
+            app:argType="string" />
+
+        <argument
+            android:name="subject"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_ticket"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.support.tickets.create.CreateTicketFragment"
+        android:label="@string/new_ticket"
+        tools:layout="@layout/fragment_create_ticket">
+
+
+    </fragment>
+
+
+</navigation>

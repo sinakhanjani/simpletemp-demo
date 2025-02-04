@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="specialties">
+        <item>Endodontics</item>
+        <item>Orthodontics</item>
+        <item>Periodontics</item>
+        <item>Implantology</item>
+        <item>OralSurgery</item>
+        <item>RestorativeDentistry</item>
+    </string-array>
+
+    <string-array name="parking">
+        <item>Free On Site</item>
+        <item>Paid On Site</item>
+        <item>Street Parking</item>
+        <item>Public Lot</item>
+        <item>No Parking Available</item>
+    </string-array>
+
+    <string-array name="radiography">
+        <item>Digital</item>
+        <item>Film</item>
+    </string-array>
+
+    <string-array name="ultrasonic">
+        <item>Piezo</item>
+        <item>Cavitron</item>
+    </string-array>
+
+    <string-array name="charting">
+        <item>Paper</item>
+        <item>Digital</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="dentaltemp_type">
+        <item>Dental Hygienist</item>
+        <item>Dental Nurse</item>
+    </string-array>
+
+    <string-array name="unpaid_break">
+        <item>Zero</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>Technical</item>
+        <item>Financial</item>
+        <item>Complaint</item>
+        <item>Help</item>
+    </string-array>
+
+</resources>

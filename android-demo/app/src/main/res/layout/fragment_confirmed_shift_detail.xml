@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    tools:context=".ui.pages.dentaltemp.home.shifts.confirmed.ConfirmedShiftDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:outlineAmbientShadowColor="@color/colorDayGreen"
+                    android:outlineSpotShadowColor="@color/colorDayGreen"
+                    app:cardBackgroundColor="@color/colorDayGreen"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="16dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:targetApi="p">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/v_circle_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="top|end"
+                            android:layout_marginTop="-20dp"
+                            android:layout_marginEnd="-120dp"
+                            android:background="@drawable/bg_circle"
+                            android:backgroundTint="#26FFFFFF" />
+
+                        <View
+                            android:id="@+id/v_circle_1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="top|end"
+                            android:layout_marginTop="-120dp"
+                            android:layout_marginEnd="-20dp"
+                            android:background="@drawable/bg_circle"
+                            android:backgroundTint="#26FFFFFF" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginVertical="16dp">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:includeFontPadding="false"
+                                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                                android:textColor="@color/white"
+                                app:layout_constraintBottom_toTopOf="@+id/tv_date"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:text="Dr Elgin Dental" />
+
+                            <TextView
+                                android:id="@+id/tv_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/poppins_regular"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                                android:textColor="@color/white"
+                                app:layout_constraintBottom_toTopOf="@+id/tv_time"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:text="Wednesday April 15th, 2021" />
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:includeFontPadding="false"
+                                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                                android:textColor="@color/colorCardTextPrimary"
+                                app:layout_constraintBottom_toTopOf="@+id/tv_total_day_pay"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:text="7:30 am - 5:00 pm" />
+
+                            <TextView
+                                android:id="@+id/tv_total_day_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/poppins_medium"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:text="@string/total_days_pay_"
+                                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                                android:textColor="@color/white"
+                                app:layout_constraintBottom_toTopOf="@+id/iv_address"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tv_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:includeFontPadding="false"
+                                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                                android:textColor="@color/colorCardTextPrimary"
+                                app:layout_constraintBottom_toBottomOf="@+id/tv_total_day_pay"
+                                app:layout_constraintStart_toEndOf="@+id/tv_total_day_pay"
+                                app:layout_constraintTop_toTopOf="@+id/tv_total_day_pay"
+                                tools:text="£280.00" />
+
+                            <ImageView
+                                android:id="@+id/iv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_direct_right"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:tint="@color/white"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/poppins_regular"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                                android:textColor="@color/white"
+                                app:layout_constraintBottom_toBottomOf="@+id/iv_address"
+                                app:layout_constraintStart_toEndOf="@+id/iv_address"
+                                app:layout_constraintTop_toTopOf="@+id/iv_address"
+                                tools:text="Street name, City • 23 miles" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </FrameLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-22dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="16dp"
+                    android:src="@drawable/ic_vector_dental_temp"
+                    tools:ignore="ContentDescription" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/office_details_"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/colorTextSecondary" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/colorLightBg"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/colorBorder"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_software_title"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/software"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_software"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_software_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_software_title"
+                        tools:text="Dentrix" />
+
+                    <View
+                        android:id="@+id/divider_software"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_software_title" />
+
+                    <TextView
+                        android:id="@+id/tv_charting_title"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/charting"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_software" />
+
+                    <TextView
+                        android:id="@+id/tv_charting"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_charting_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_charting_title"
+                        tools:text="Paper charts" />
+
+                    <View
+                        android:id="@+id/divider_charting"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_charting_title" />
+
+                    <TextView
+                        android:id="@+id/tv_ultrasonic_title"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/ultrasonic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_charting" />
+
+                    <TextView
+                        android:id="@+id/tv_ultrasonic"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_ultrasonic_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_ultrasonic_title"
+                        tools:text="Piezo" />
+
+                    <View
+                        android:id="@+id/divider_ultrasonic"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_ultrasonic_title" />
+
+                    <TextView
+                        android:id="@+id/tv_radiography_title"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/radiography"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_ultrasonic" />
+
+                    <TextView
+                        android:id="@+id/tv_radiography"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_radiography_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_radiography_title"
+                        tools:text="Digital" />
+
+                    <View
+                        android:id="@+id/divider_radiography"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_radiography_title" />
+
+                    <TextView
+                        android:id="@+id/tv_parking_title"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/parking"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_radiography" />
+
+                    <TextView
+                        android:id="@+id/tv_parking"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_parking_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_parking_title"
+                        tools:text="Free-On-Site" />
+
+                    <View
+                        android:id="@+id/divider_parking"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_parking_title" />
+
+                    <TextView
+                        android:id="@+id/tv_unpaid_break_time_title"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/unpaid_break_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_parking" />
+
+                    <TextView
+                        android:id="@+id/tv_unpaid_break_time"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_unpaid_break_time_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_unpaid_break_time_title"
+                        tools:text="Unpaid" />
+
+                    <View
+                        android:id="@+id/divider_break_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorBorder"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_unpaid_break_time_title" />
+
+                    <LinearLayout
+                        android:id="@+id/container_more_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/divider_break_time">
+
+                        <TextView
+                            android:id="@+id/tv_more_detail_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/more_detail"
+                            android:textColor="@color/colorEditText" />
+
+                        <ImageButton
+                            android:id="@+id/btn_more_detail_expand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/actionBarItemBackground"
+                            android:src="@drawable/ic_navigate_next"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_more_detail"
+                        style="@style/BodySmallTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="10"
+                        android:text="@string/more_detail_msg"
+                        android:textColor="@color/colorTextGraySecond"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/container_more_detail"
+                        tools:visibility="visible" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/colorLightBg"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/colorBorder"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hourly_rate"
+                        android:textColor="@color/colorGrayLight"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_parking" />
+
+                    <TextView
+                        android:id="@+id/tv_hourly_price"
+                        style="@style/BodyMediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/e_per_hr"
+                        android:textColor="@color/colorGrayLight"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider_parking"
+                        tools:text="23 (£/hr)" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                style="@style/BodySmallTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/note_please_mark_shift_as_complete_msg"
+                android:textColor="@color/colorTextSecondary"
+                app:layout_constraintBottom_toBottomOf="@id/tv_parking_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_parking_title" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mark_as_complete"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/mark_shift_as_complete" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel"
+                style="@style/TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/cancel_shift"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindowsBackground"
+        tools:visibility="gone" />
+
+</FrameLayout>
+

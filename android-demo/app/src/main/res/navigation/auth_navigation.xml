@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation.xml"
+    app:startDestination="@id/account">
+
+    <fragment
+        android:id="@+id/account"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/action_account_to_auth"
+            app:destination="@id/auth"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/auth"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.auth.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_auth_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_auth_to_register"
+            app:destination="@id/register"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/login"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_login_to_forgot_password"
+            app:destination="@id/forgot_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/register"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/register"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_register_to_verification"
+            app:destination="@id/verification"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgot_password"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.forgot.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_forgot_password_to_verification"
+            app:destination="@id/verification"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verification"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.verification.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification">
+
+        <argument
+            android:name="reset_password"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_verification_to_verified"
+            app:destination="@id/verified"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/auth"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_verification_to_new_password"
+            app:destination="@id/new_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in_enter"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/forgot_password"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verified"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.verified.VerifiedFragment"
+        android:label="fragment_verified"
+        tools:layout="@layout/fragment_verified">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_password"
+        android:name="com.simpletempco.simpletemp.ui.pages.common.authentication.password.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password">
+
+        <argument
+            android:name="user_type"
+            app:argType="string" />
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <argument
+            android:name="password_token"
+            app:argType="string" />
+
+    </fragment>
+
+
+</navigation>

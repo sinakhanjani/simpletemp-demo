@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "restful-api",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/sinakhanjani/restful-api",
+      "state" : {
+        "revision" : "bf438ead2215eb0d0027874235874559b2c0fb2a",
+        "version" : "1.6.0"
+      }
+    }
+  ],
+  "version" : 2
+}

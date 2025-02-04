@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ui.pages.dentaltemp.profile.myprofile.personal.PersonalInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="Autofill">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/please_complete_your_profile_msg"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/colorTextSecondary" />
+
+        <!-- Step bar -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_step_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:background="@color/colorLightBg"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_first"
+                app:layout_constraintEnd_toStartOf="@+id/tv_third"
+                app:layout_constraintStart_toEndOf="@+id/tv_first"
+                app:layout_constraintTop_toTopOf="@+id/tv_first" />
+
+            <TextView
+                android:id="@+id/tv_first"
+                style="@style/StepBarItemStyle"
+                android:layout_width="@dimen/step_bar_item_size"
+                android:layout_height="@dimen/step_bar_item_size"
+                android:layout_marginStart="16dp"
+                android:text="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/StepBarItemTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_first" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                style="@style/StepBarItemStyle"
+                android:layout_width="@dimen/step_bar_item_size"
+                android:layout_height="@dimen/step_bar_item_size"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="2"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/StepBarItemTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/personal_info"
+                android:textColor="@color/colorEditText"
+                app:layout_constraintEnd_toEndOf="@+id/tv_second"
+                app:layout_constraintStart_toStartOf="@id/tv_second"
+                app:layout_constraintTop_toBottomOf="@+id/tv_second" />
+
+            <TextView
+                android:id="@+id/tv_third"
+                style="@style/StepBarItemStyle"
+                android:layout_width="@dimen/step_bar_item_size"
+                android:layout_height="@dimen/step_bar_item_size"
+                android:layout_marginEnd="16dp"
+                android:text="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/StepBarItemTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banking_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_third" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/personal_information"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/profile_edt_margin"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                style="@style/TitleEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/certification_number" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_certification"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/not_editable"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/profile_edt_margin"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                style="@style/TitleEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graduation_year" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_graduation_year"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/not_editable"
+            android:paddingEnd="16dp"
+            app:drawableEndCompat="@drawable/ic_navigate_next"
+            tools:ignore="RtlSymmetry" />
+
+
+        <LinearLayout
+            android:id="@+id/specialties_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/profile_edt_margin"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                style="@style/TitleEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specialties" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_specialties"
+            style="@style/ProfileEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/example_oral_"
+            android:paddingEnd="16dp"
+            app:drawableEndCompat="@drawable/ic_navigate_next"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/profile_edt_margin"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                style="@style/TitleEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_these_items" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_dbs_certificate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt_profile"
+                android:backgroundTint="@color/colorAccent"
+                android:drawablePadding="8dp"
+                android:ellipsize="start"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:singleLine="true"
+                android:text="@string/dbs_certificate"
+                android:textColor="@color/white"
+                app:drawableStartCompat="@drawable/ic_attach" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_resume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt_profile"
+                android:backgroundTint="@color/colorAccent"
+                android:drawablePadding="8dp"
+                android:ellipsize="start"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:singleLine="true"
+                android:text="@string/upload_resume"
+                android:textColor="@color/white"
+                app:drawableStartCompat="@drawable/ic_attach" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirm"
+            style="@style/PrimaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="56dp"
+            android:text="@string/save_" />
+
+    </LinearLayout>
+
+</ScrollView>

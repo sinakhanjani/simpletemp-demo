@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowsBackground"
+    tools:context=".ui.pages.dentaltemp.profile.myprofile.bank.BankInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="Autofill">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/please_complete_your_profile_msg"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/colorTextSecondary" />
+
+            <!-- Step bar -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_step_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:background="@color/colorLightBg"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_first"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_third"
+                    app:layout_constraintStart_toEndOf="@+id/tv_first"
+                    app:layout_constraintTop_toTopOf="@+id/tv_first" />
+
+                <TextView
+                    android:id="@+id/tv_first"
+                    style="@style/StepBarItemStyle"
+                    android:layout_width="@dimen/step_bar_item_size"
+                    android:layout_height="@dimen/step_bar_item_size"
+                    android:layout_marginStart="16dp"
+                    android:text="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="@style/StepBarItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/account_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_first" />
+
+                <TextView
+                    android:id="@+id/tv_second"
+                    style="@style/StepBarItemStyle"
+                    android:layout_width="@dimen/step_bar_item_size"
+                    android:layout_height="@dimen/step_bar_item_size"
+                    android:text="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="@style/StepBarItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_info"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_second"
+                    app:layout_constraintStart_toStartOf="@id/tv_second"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_second" />
+
+                <TextView
+                    android:id="@+id/tv_third"
+                    style="@style/StepBarItemStyle"
+                    android:layout_width="@dimen/step_bar_item_size"
+                    android:layout_height="@dimen/step_bar_item_size"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="@style/StepBarItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/banking_info"
+                    android:textColor="@color/colorEditText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_third" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/banking_information"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_edt_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    style="@style/TitleEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/iban_number" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_iban"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_nl_"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_edt_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    style="@style/TitleEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bic_swift_code_" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_bic"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_abn_"
+                android:inputType="text" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_edt_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    style="@style/TitleEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/optional_" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_bank_name"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_the_bank_name"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_edt_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    style="@style/TitleEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beneficiary_name" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_beneficiary_name"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_bank_name_"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_edt_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    style="@style/TitleEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank_account_number" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_bank_account_number"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_345455667887980_"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_edt_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    style="@style/TitleEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_number" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_sort_number"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_345455667887980_"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_btn_save"
+                style="@style/PrimaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="56dp"
+                android:text="@string/save_" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.simpletempco.simpletemp.ui.custom.views.NonDataLayout
+        android:id="@+id/non_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
